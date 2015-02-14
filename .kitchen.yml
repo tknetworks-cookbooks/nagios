@@ -1,0 +1,16 @@
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: debian-7.8
+    run_list:
+    - recipe[apt]
+
+suites:
+  - name: default
+    encrypted_data_bag_secret_key_path: test/integration/secret_key
+    run_list:
+      - recipe[nagios]

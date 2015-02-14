@@ -1,0 +1,8 @@
+*.swp
+Gemfile.lock
+Berksfile.lock
+vendor
+.vagrant
+.bundle
+.kitchen
+.kitchen.local.yml

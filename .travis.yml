@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.2.0
+
+install:
+  - curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+script: chef exec rake
